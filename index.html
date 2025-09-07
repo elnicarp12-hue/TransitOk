@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tránsito & Transporte — En Vivo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🚦 Tránsito, Trenes, Subte y Urgentes — En Vivo</h1>
+    <div id="last-update">Última actualización: --:--</div>
+  </header>
+
+  <main>
+    <div class="grid">
+      <section id="trenes" class="card">
+        <h2>🚆 Trenes Argentinos</h2>
+        <div id="trenes-data">Cargando...</div>
+      </section>
+
+      <section id="subtes" class="card">
+        <h2>🚇 Subte / Premetro</h2>
+        <div id="subtes-data">Cargando...</div>
+      </section>
+
+      <section id="transito" class="card">
+        <h2>🚗 Tránsito CABA</h2>
+        <div id="transito-data">Cargando...</div>
+      </section>
+
+      <section id="noticias" class="card">
+        <h2>📰 Último Momento (Noticias)</h2>
+        <div id="noticias-data">Cargando...</div>
+      </section>
+    </div>
+
+    <section id="guion" class="card">
+      <h2>🎙️ Modo guion (texto listo para leer)</h2>
+      <div id="guion-text">Sin novedades importantes.</div>
+      <div class="controls">
+        <button id="copy-guion">Copiar guion</button>
+        <button id="pause-alerts">Pausar alertas</button>
+      </div>
+    </section>
+  </main>
+
+  <audio id="alert-sound" preload="auto">
+    <source src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg" type="audio/ogg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
